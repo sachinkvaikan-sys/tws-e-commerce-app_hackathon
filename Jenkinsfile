@@ -80,7 +80,7 @@ pipeline {
         
         stage('Push Docker Images') {
             parallel {
-                stage('Push Main App Image') {
+                stage('Push Main App Image') { 
                     steps {
                         script {
                             docker_push(
